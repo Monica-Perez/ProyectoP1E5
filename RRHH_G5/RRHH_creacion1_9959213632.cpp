@@ -63,3 +63,4 @@ int main()
     cout << primerEmpleado.getEdad() << endl;
     return 0;
 }
+
