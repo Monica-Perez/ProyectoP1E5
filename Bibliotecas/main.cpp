@@ -2,8 +2,11 @@
 
 using namespace std;
 
-int main(){
-
+int main()
+{
+    persona estudiante;
+	estudiante.menu();
+	return 0;
 
     return 0;
 }
