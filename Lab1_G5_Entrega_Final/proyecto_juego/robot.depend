@@ -70,3 +70,25 @@
 	<iostream>
 	<fstream>
 
+1648225546 source:c:\users\halld\proyectos\proyectofinal\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\main.cpp
+	<iostream>
+	"player.h"
+	"mapcell.h"
+	"gamemap.h"
+
+1648225546 c:\users\halld\proyectos\proyectofinal\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\include\player.h
+
+1648225546 c:\users\halld\proyectos\proyectofinal\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\include\mapcell.h
+
+1648225546 c:\users\halld\proyectos\proyectofinal\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\include\gamemap.h
+	"mapcell.h"
+
+1648225546 source:c:\users\halld\proyectos\proyectofinal\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\src\mapcell.cpp
+	"mapcell.h"
+	<iostream>
+
+1648225546 source:c:\users\halld\proyectos\proyectofinal\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\src\player.cpp
+	"player.h"
+	<iostream>
+	<fstream>
+
