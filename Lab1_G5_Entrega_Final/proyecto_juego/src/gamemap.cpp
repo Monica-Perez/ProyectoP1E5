@@ -136,7 +136,7 @@ void gamemap::drawPortada()
 {
     string line;
     char userInput = ' ';
-    ifstream myFile("portada.txt");
+    ifstream myFile("portadaG5.txt");
     if(myFile.is_open())
     {
         //Se obtiene el mapa externo y se general el mapa de celdas
