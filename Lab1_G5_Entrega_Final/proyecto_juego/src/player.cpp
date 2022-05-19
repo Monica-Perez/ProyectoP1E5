@@ -35,6 +35,7 @@ void player::callInput()
 {
     char userInput = ' ';
     cin >> userInput;
+    cout<<endl;
     switch(userInput)
     {
     case 'a':

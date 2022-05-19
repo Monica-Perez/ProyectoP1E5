@@ -17,7 +17,14 @@ int main()
     //map.draw();
     while(map.isGameOver==false)
     {
-      cout << "Introduce comando de movimiento <w>, <a>, <s>, <d> : <x> --> Salir " << endl;
+        //cout << "\nIntrucciones: " << endl;
+      cout << "\n-----------------------------------------------------------------------------------" << endl;
+      cout << "\t\t\t***COMANDOS DE MOVIMIENTO***";
+      cout << "\n-----------------------------------------------------------------------------------" << endl;
+      cout << "\n\t\tArriba|w|, Abajo |s|, Izquierda |a|, Derecha |d|" << endl;
+      cout << "\n\t\t\t     Salir del Juego |x|" << endl;
+      cout << "\n-----------------------------------------------------------------------------------" << endl;
+      cout << "\nIntroduza Comando de Movimiento: ";
       hero.callInput();
 
       //Actualizar información del jugador en el mapa

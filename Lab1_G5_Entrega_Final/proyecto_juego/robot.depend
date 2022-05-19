@@ -141,3 +141,30 @@
 	<iostream>
 	<fstream>
 
+1652998459 source:c:\users\monica pérez\desktop\proyecto_juego\main.cpp
+	<iostream>
+	"player.h"
+	"mapcell.h"
+	"gamemap.h"
+
+1648872407 c:\users\monica pérez\desktop\proyecto_juego\include\player.h
+
+1648872407 c:\users\monica pérez\desktop\proyecto_juego\include\mapcell.h
+
+1652997827 c:\users\monica pérez\desktop\proyecto_juego\include\gamemap.h
+	"mapcell.h"
+
+1652997938 source:c:\users\monica pérez\desktop\proyecto_juego\src\gamemap.cpp
+	"gamemap.h"
+	<iostream>
+	<fstream>
+
+1648872407 source:c:\users\monica pérez\desktop\proyecto_juego\src\mapcell.cpp
+	"mapcell.h"
+	<iostream>
+
+1652998491 source:c:\users\monica pérez\desktop\proyecto_juego\src\player.cpp
+	"player.h"
+	<iostream>
+	<fstream>
+

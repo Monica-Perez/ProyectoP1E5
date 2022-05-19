@@ -15,7 +15,7 @@ void gamemap::draw(){
     //system("cls");
     for (int i = 0; i < 15; i++)
     {
-        for (int j = 0; j < 10; j++)
+        for (int j = 0; j < 15; j++)
         {
             // Utilizar las celulas cuando se dibuja el mapa
             cout << cell [i][j].id;
@@ -107,14 +107,14 @@ void gamemap::createMapToFile()
     {
         for (int i = 0; i < 15; i++)
         {
-            for (int j = 0; j < 10; j++)
+            for (int j = 0; j < 15; j++)
             {
                 if (i == 0 || i == 14)
                 {
                     myFile << "1";
                 } else
                 {
-                    if (j == 0 || j == 9)
+                    if (j == 0 || j == 14)
                     {
                         myFile << "1";
                     } else

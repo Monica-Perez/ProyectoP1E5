@@ -8,7 +8,7 @@ class gamemap
     public:
         gamemap();
         mapcell* playerCell;
-        mapcell cell [15][10];
+        mapcell cell [15][15];
         void draw();
         // método que obtiene las coordenadas del jugador y actualiza el mapa
         bool setPlayerCell(int playerX, int playerY);
