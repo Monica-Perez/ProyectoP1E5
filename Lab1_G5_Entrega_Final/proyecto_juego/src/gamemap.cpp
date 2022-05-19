@@ -154,7 +154,9 @@ void gamemap::drawPortada()
 }
 void gamemap::drawVictoria()
 {
+    system("cls");
     string line;
+    system("color a");
     char userInput = ' ';
     ifstream myFile("premioG5.txt");
     if(myFile.is_open())
