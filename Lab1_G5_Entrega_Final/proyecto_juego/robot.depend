@@ -87,7 +87,7 @@
 	"mapcell.h"
 	<iostream>
 
-1648225254 source:c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\src\player.cpp
+1648855292 source:c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\src\player.cpp
 	"player.h"
 	<iostream>
 	<fstream>
@@ -135,4 +135,9 @@
 1648256423 source:c:\users\abiva\proyectos\proyectofinal\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\src\mapcell.cpp
 	"mapcell.h"
 	<iostream>
+
+1652996033 source:c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\src\gamemap.cpp
+	"gamemap.h"
+	<iostream>
+	<fstream>
 
