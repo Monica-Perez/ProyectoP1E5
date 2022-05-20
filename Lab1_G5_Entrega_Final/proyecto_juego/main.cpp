@@ -21,7 +21,7 @@ int main()
       cout << "\n" << endl;
       cout << "\n  EL JUEGO CONSISTE EN LLEVAR AL ROBOT POR EL INTERIOR DEL LABERITO CON EL PROPOSITO";
       cout << "\n  DE QUE LLEGUE A EL SIGNO DEL DOLAR $ Y ASI OTORGARLE EL PREMIO GANADOR DEL LABERINTO";
-      cout << "\n  PARA ELLO TENDRE QUE UTILIZAR LAS LETRAS W (Arriba) S (Abajo) A (Izquierda) D (Derecha)";
+      cout << "\n  PARA ELLO TENDRA QUE UTILIZAR LAS LETRAS W (Arriba) S (Abajo) A (Izquierda) D (Derecha)";
       cout << "\n" << endl;
       cout << "\n----------------------------------------------------------------------------------------" << endl;
 
