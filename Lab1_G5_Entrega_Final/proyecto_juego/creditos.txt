@@ -1,9 +1,44 @@
-Equipo de Desarrollo:
-   Equipo -----> G1
-   Integrante 1:  Alan Abimael - Portada
-   Integrante 2:  Daniel Hall - Premios
-   Integrante 3:  Monica Perez - Caracteres
-   Integrante 4:  Abigail Vasquez - Mensaje Final
+         
+                                           CREDITOS
+                                        --------------
+                                    
+                                     | EQUIPO DE TRABAJO: |                                      
+                                           
+                                  
+Equipo de trabajo----->                   ~ Grupo 5 ~
+ 
+Integrante 1:                Monica Gabriela Perez Velasquez (coordinadora)
+                              
+                                          Encargada de:
+                          
+                                     laberinto y menu comandos
+
+Integrante 2:                       Alan Abimael Galacia Ruano
+                              
+                                          Encargado de:
+                           
+                                       Portada y color premio 
+
+Integrante 3:                      Daniel Alexander Hall Alvarez 
+                          
+                                         Encargado de:
+                                 
+                                   Premio y menu de instrucciones
+  
+Integrante 4:                    Abigail Elizabeth Vasquez Herrera
+                                        
+                                         Encargada de:
+
+                                      Mensaje Final y creditos
+
+
+                                   _________________________
+                                  | ADIOS GRACIAS POR JUGAR!|
+                                  | ________________________|
+                  
+                     ^----^
+                    ( U w U) 
+           
 
 
 
