@@ -14,6 +14,8 @@ class gamemap
         void drawPortada();
         void drawVictoria();
         void drawTrampa();
+        void drawIns();
+        void drawcredi();
         virtual ~gamemap();
         bool isGameOver = false;
 

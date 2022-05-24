@@ -140,11 +140,11 @@ void gamemap::drawPortada()//Alan Galicia 9959-21-3632
         cout << "Error FATAL: el archivo de portada no pudo ser cargado" << endl;
     }
 }
-void gamemap::drawVictoria()//Daniel Hall 9959-21-1395
+void gamemap::drawVictoria()//Alan Galicia 9959-21-3632
 {
     system("cls");
     string line;
-    system("color a"); //Alan Galicia 9959-21-3632
+    system("color a");
     char userInput = ' ';
     ifstream myFile("casa.txt");
     if(myFile.is_open())
@@ -185,6 +185,47 @@ void gamemap::drawTrampa()//MONICA PEREZ 9959-21-1840
         cout << "Error FATAL: el archivo Trampa no pudo ser cargado" << endl;
     }
 }
+void gamemap::drawIns() //Daniel Hall 9959-21-1395
+{
+    string line;
+    char userInput = ' ';
+    ifstream myFile("Instrucciones.txt");
+    if(myFile.is_open())
+    {
+        //Se obtiene el mapa externo y se general el mapa de celdas
+        while( getline(myFile, line))
+        {
+            cout << line << endl;
+        }
+        myFile.close();
+        cin >> userInput;
+    }
+    else
+    {
+        cout << "Error FATAL: el archivo de ganador no pudo ser cargado" << endl;
+    }
+}
+void gamemap::drawcredi()// ABIGAIL VASQUEZ 9959-21-13777
+{
+    string line;
+    char userInput = ' ';
+    ifstream myFile("Creditos.txt");
+    if(myFile.is_open())
+    {
+        //Se obtiene el mapa externo y se general el mapa de celdas
+        while( getline(myFile, line))
+        {
+            cout << line << endl;
+        }
+        myFile.close();
+        exit(0);
+    }
+    else
+    {
+        cout << "Error FATAL: el archivo de ganador no pudo ser cargado" << endl;
+    }
+}
+
 
 gamemap::~gamemap()
 {
