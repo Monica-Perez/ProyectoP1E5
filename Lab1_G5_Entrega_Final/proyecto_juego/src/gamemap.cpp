@@ -146,7 +146,7 @@ void gamemap::drawVictoria()//Daniel Hall 9959-21-1395
     string line;
     system("color a"); //Alan Galicia 9959-21-3632
     char userInput = ' ';
-    ifstream myFile("premioG5.txt");
+    ifstream myFile("casa.txt");
     if(myFile.is_open())
     {
         while( getline(myFile, line))
