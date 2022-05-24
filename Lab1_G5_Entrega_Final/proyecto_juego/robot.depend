@@ -70,24 +70,24 @@
 	<iostream>
 	<fstream>
 
-1653403594 source:c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\main.cpp
+1653432462 source:c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\main.cpp
 	<iostream>
 	"player.h"
 	"mapcell.h"
 	"gamemap.h"
 
-1653403594 c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\include\player.h
+1653432462 c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\include\player.h
 
-1653403594 c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\include\mapcell.h
+1653432462 c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\include\mapcell.h
 
-1653403594 c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\include\gamemap.h
+1653432462 c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\include\gamemap.h
 	"mapcell.h"
 
-1653403594 source:c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\src\mapcell.cpp
+1653432462 source:c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\src\mapcell.cpp
 	"mapcell.h"
 	<iostream>
 
-1653403594 source:c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\src\player.cpp
+1653432462 source:c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\src\player.cpp
 	"player.h"
 	<iostream>
 	<fstream>
@@ -136,7 +136,7 @@
 	"mapcell.h"
 	<iostream>
 
-1653403594 source:c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\src\gamemap.cpp
+1653432845 source:c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\src\gamemap.cpp
 	"gamemap.h"
 	<iostream>
 	<fstream>
