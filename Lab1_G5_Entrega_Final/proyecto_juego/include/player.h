@@ -2,7 +2,7 @@
 #define PLAYER_H
 
 // Encabezado que define toda la funcionabilidad del Jugador
-class player
+class player//grupo
 {
     public:
         player();
@@ -14,7 +14,7 @@ class player
         int getValueY();
         void setValueY(int valueY);
         void resetToSafePosition();
-        void drawCreditos();
+        void drawCreditos();//Abigail Vasquez 9959-21-13777
 
     protected:
 

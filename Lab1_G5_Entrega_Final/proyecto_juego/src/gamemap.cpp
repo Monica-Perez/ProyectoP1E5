@@ -1,52 +1,43 @@
 #include "gamemap.h"
 #include <iostream>
 #include <fstream>
-//Implementacion de toda la funcionabilidad del mapa del juego
 
 using namespace std;
 gamemap::gamemap()
 {
-    //ctor
     playerCell = NULL;
     loadMapFromFile();
     isGameOver = false;
 }
-void gamemap::draw(){
-    //system("cls");
-    for (int i = 0; i < 15; i++)
+void gamemap::draw(){//MONICA PEREZ 9959-21-1840
+    for (int i = 0; i < 16  ; i++)
     {
-        for (int j = 0; j < 15; j++)
+        for (int j = 0; j < 35; j++)
         {
-            // Utilizar las celulas cuando se dibuja el mapa
             cout << cell [i][j].id;
         }
         cout << endl;
     }
 }
-bool gamemap::setPlayerCell(int playerX, int playerY)
+bool gamemap::setPlayerCell(int playerX, int playerY)//MONICA PEREZ 9959-21-1840
 {
-    if (cell[playerX][playerY].isBlockedCell() == false)
-    {
-        if (cell[playerX][playerY].id == '$')
-        {
+    if (cell[playerX][playerY].isBlockedCell() == false){
+        if (cell[playerX][playerY].id == '$'){
             drawVictoria();
             isGameOver = true;
             return true;
-        } else
-        { // evalúa espacio
-            //Se verifica que maque con cero la posicion que abandona el jugador
-            if (playerCell != NULL)
-            {
-                // Cambio permitira quitar los ceros en el camino del jugador, al traslador un cero a un char se convierte en espacio
-                //playerCell->id='0';
+        }else{
+            if (cell[playerX][playerY].id == '&'){
+                drawTrampa();
+                isGameOver = true;
+                return true;
+            }
+            if (playerCell != NULL){
                 playerCell->id=0;
             }
-            //cout << "Las coordenadas del jugador estan en: " << playerX << "," << playerY << endl;
-            //Cambio de coordenadas para corregiro problema de los movimientos del jugador en el eje X
-            //playerCell = &cell[playerY][playerX];
             playerCell = &cell[playerX][playerY];
             //Simbolo del jugador en el mapa
-            playerCell->id=169; //ascii 169
+            playerCell->id=254;
         }
 
         return true;
@@ -57,7 +48,7 @@ bool gamemap::setPlayerCell(int playerX, int playerY)
     }
 
 }
-void gamemap::loadMapFromFile()
+void gamemap::loadMapFromFile()//MONICA PEREZ 9959-21-1840
 {
     string line;
     int row = 0;
@@ -78,8 +69,6 @@ void gamemap::loadMapFromFile()
                 {
                     cell[row][p].id = line[p];
                 }
-                // Cambio para quitar ceros y colocar espacios en blanco en el mapa
-                // cell[row][p].id = line[p];
             }
             row++;
         }
@@ -100,21 +89,20 @@ void gamemap::loadMapFromFile()
     }
 
 }
-void gamemap::createMapToFile()
-{
+void gamemap::createMapToFile(){//MONICA PEREZ 9959-21-1840
     ofstream myFile("MapG5.txt");
     if (myFile.is_open())
     {
-        for (int i = 0; i < 15; i++)
+        for (int i = 0; i < 16; i++)
         {
-            for (int j = 0; j < 15; j++)
+            for (int j = 0; j < 35; j++)
             {
-                if (i == 0 || i == 14)
+                if (i == 0 || i == 15)
                 {
                     myFile << "1";
                 } else
                 {
-                    if (j == 0 || j == 14)
+                    if (j == 0 || j == 34)
                     {
                         myFile << "1";
                     } else
@@ -132,7 +120,7 @@ void gamemap::createMapToFile()
         cout << "Error FATAL: archivo no pudo ser creado" << endl;
     }
 }
-void gamemap::drawPortada()
+void gamemap::drawPortada()//Alan Galicia 9959-21-3632
 {
     string line;
     char userInput = ' ';
@@ -152,26 +140,49 @@ void gamemap::drawPortada()
         cout << "Error FATAL: el archivo de portada no pudo ser cargado" << endl;
     }
 }
-void gamemap::drawVictoria()
+void gamemap::drawVictoria()//Daniel Hall 9959-21-1395
 {
     system("cls");
     string line;
-    system("color a");
+    system("color a"); //Alan Galicia 9959-21-3632
     char userInput = ' ';
     ifstream myFile("premioG5.txt");
     if(myFile.is_open())
     {
-        //Se obtiene el mapa externo y se general el mapa de celdas
         while( getline(myFile, line))
         {
             cout << line << endl;
         }
         myFile.close();
-        cin >> userInput;
+        exit(0);
     }
     else
     {
-        cout << "Error FATAL: el archivo de ganador no pudo ser cargado" << endl;
+        cout << "Error FATAL: el archivo Ganador no pudo ser cargado" << endl;
+    }
+}
+void gamemap::drawTrampa()//MONICA PEREZ 9959-21-1840
+{
+    system("cls");
+    string line;
+    system("color c");
+    char userInput = ' ';
+    ifstream myFile("Trampa.txt");
+    if(myFile.is_open())
+    {
+        while( getline(myFile, line))
+        {
+            cout << line << endl;
+        }
+        myFile.close();
+        cout << "\n\tNOOO!!, ESE ERA EL LOBOOO :(" << endl;
+        cout << "\tVuelve a intentarlo..." << endl<< endl;
+        exit(0);
+        //cin >> userInput;
+    }
+    else
+    {
+        cout << "Error FATAL: el archivo Trampa no pudo ser cargado" << endl;
     }
 }
 

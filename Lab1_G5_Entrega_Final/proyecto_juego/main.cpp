@@ -7,14 +7,10 @@ using namespace std;
 
 int main()
 {
-    // Aplicativo elaborado en el curso de Programacion I - Universidad Mariano Galvez
-    // desarrollador: daguilae - Marzo 2022
-
-
-    gamemap map;
+    gamemap map;//Monica Perez 9959-21-1840
     player hero;
-    map.drawPortada();
-    //map.draw();
+    map.drawPortada();//Alan Galicia 9959-21-3632
+    //Daniel Hall 9959-21-1395
       cout << "\n----------------------------------------------------------------------------------------" << endl;
       cout << "\t\t\t\t****INSTRUCCIONES****";
       cout << "\n----------------------------------------------------------------------------------------" << endl;
@@ -25,11 +21,9 @@ int main()
       cout << "\n" << endl;
       cout << "\n----------------------------------------------------------------------------------------" << endl;
 
-    while(map.isGameOver==false)
+    int contador=0;
+    while(map.isGameOver==false){//Monica Perez 9959-21-1840
 
-    {
-
-        //cout << "\nIntrucciones: " << endl;
       cout << "\n----------------------------------------------------------------------------------------" << endl;
       cout << "\t\t\t   ****COMANDOS DE MOVIMIENTO****";
       cout << "\n----------------------------------------------------------------------------------------" << endl;
@@ -39,23 +33,16 @@ int main()
       cout << "\nIntroduza Comando de Movimiento: ";
 
       hero.callInput();
+      contador+=1;
+      cout<<"\nNumero de Movimientos: "<<contador<<endl<<endl;
 
       //Actualizar información del jugador en el mapa
-      if(map.setPlayerCell(hero.getValueX(), hero.getValueY()))
-      {
-     //   system("cls");
+      if(map.setPlayerCell(hero.getValueX(), hero.getValueY())){
         map.draw();
-      } else
-      {
-       // system("cls");
+      }else{
         hero.resetToSafePosition();
-        //Dibujamos el mapa
         map.draw();
-
       }
-      //map.draw();
-
     }
-
     return 0;
 }

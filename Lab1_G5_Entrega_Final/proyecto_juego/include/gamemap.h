@@ -8,12 +8,12 @@ class gamemap
     public:
         gamemap();
         mapcell* playerCell;
-        mapcell cell [15][15];
+        mapcell cell [16][35];
         void draw();
-        // método que obtiene las coordenadas del jugador y actualiza el mapa
         bool setPlayerCell(int playerX, int playerY);
         void drawPortada();
         void drawVictoria();
+        void drawTrampa();
         virtual ~gamemap();
         bool isGameOver = false;
 

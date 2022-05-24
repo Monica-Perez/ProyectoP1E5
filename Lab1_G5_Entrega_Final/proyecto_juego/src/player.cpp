@@ -7,7 +7,6 @@ using namespace std;
 
 player::player()
 {
-    //ctor
     x = 1;
     y = 1;
     lastX = 1;
@@ -65,7 +64,7 @@ void player::callInput()
         //cout << "El jugador se mueve izquierda" << endl;
         break;
     case 'x':
-        cout << " -- el juego ha terminado, gracias por jugar soldado -- :D" << endl << endl;
+        cout << " -- el juego ha terminado, gracias por jugar soldado -- :D" << endl << endl;//Abigail Vasquez 9959-21-13777
         drawCreditos();
         cout << endl;
         exit(0);
@@ -77,7 +76,7 @@ void player::resetToSafePosition()
     x = lastX;
     y = lastY;
 }
-void player::drawCreditos()
+void player::drawCreditos()//Abigail Vasquez 9959-21-13777
 {
     string line;
     char userInput = ' ';
